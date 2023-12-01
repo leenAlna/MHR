@@ -23,9 +23,9 @@ header
   align-items: center;
   z-index: 10000;
 }
-header •logo
+header .logo
 {
-  color: #bc82ee;
+  color: rgba(255, 255, 255, 0.933);
   font-weight: 700; 
   text-decoration: none; 
   font-size: 2em;
@@ -95,3 +95,94 @@ section
 .dropdown a:hover{
   background-color: #9494ed;
 }
+.sec{
+  position: relative;
+  min-height: 100vh;
+  padding: 100px;
+  }
+
+@media screen and (max-width: 900px) 
+{
+  header {
+font-size: 10px;
+line-height: 50px;
+  }
+}
+#hamburger-icon {
+   margin: auto 0;
+   display: none;
+   cursor: pointer;
+}
+#hamburger-icon div{
+  width: 35px;
+  height: 3px;
+  background-color: #f3f2f4;
+  margin: p6px 0;
+  transition: 0.4s;
+}
+.bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+  opacity: 0;
+}
+.bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+#hamburger-icon {
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  header nav {
+    display: none;
+  }
+}
+.body .div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dropdown:hover .content{
+  display: block;
+}
+.dropdown:hover button{
+   background: #19294f (0, 0%, 70%);
+   color: #f3f2f4
+}
+.dropdown a:hover{
+ background-color: #9494ed;
+}
+
+@media only screen and (min-width: 900px) {
+  .dropdown-content {
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  section img {
+    display: none;
+  }
+}
+
+
+
+
